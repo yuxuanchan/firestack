@@ -1,4 +1,7 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '8.0'
+
+def firestack_pods
 [
   'Firebase/Core',
   'Firebase/Auth',
@@ -11,7 +14,8 @@ source 'https://github.com/CocoaPods/Specs.git'
 end
 
 target 'firestack' do
+  firestack_pods
 end
 
-# target '[project test name]' do
+# target 'firestack' do
 # end
